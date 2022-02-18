@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "10539266-d620-4ac7-b1c8-1b6b752715c8",
+		"name": "trade-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BUY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbol\": \"APL\",\n    \"userId\": 2,\n    \"quantity\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/trade/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"trade",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SELL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbol\": \"INT\",\n    \"userId\": 2,\n    \"quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/trade/sell",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"trade",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserPortfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3100/user/getUserPortfolio/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"user",
+						"getUserPortfolio",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllShares",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3100/share/getAllShares",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"share",
+						"getAllShares"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
